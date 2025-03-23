@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
-            color: #c6c6c6;
+            color: #b3b3b3;
             background-color: #212020;
             padding: 20px;
         }
@@ -16,7 +16,7 @@
         }
         .task h2 {
             cursor: pointer;
-            color: #d6d6d6;
+            color: #b3b3b3;
             padding: 10px;
             background-color: #282828;
             border-radius: 5px;
@@ -36,11 +36,12 @@
             display: none; /* Tipps sind standardmäßig ausgeblendet */
         }
         .tip:hover {
-            background-color: #5c5c5c;
+            background-color: #575757;
         }
         .tip-content {
             display: none;
             padding-top: 10px;
+            color: rgb(235, 235, 235);
         }
         .tip-content.show {
             display: block;
@@ -59,7 +60,7 @@
 
 <!-- Teilaufgabe a -->
 <div class="task" id="task-a">
-    <h2 onclick="showTask('a')">a)</h2>
+    <h2 onclick="showTask('a')">a) Skizze Pumpspeicherkraftwerk</h2>
     <div class="tip" onclick="toggleTip('a2')">
         <strong>Hilfe a1</strong> – notwendige Begriffe
         <div class="tip-content" id="a2">oberirdisches Wasserbecken, Fallrohre, Turbinen, Generatoren, unterirdisches Wasserbecken, Pumpen mit Leitungen</div>
@@ -68,7 +69,7 @@
 
 <!-- Teilaufgabe b -->
 <div class="task" id="task-b">
-    <h2 onclick="showTask('b')"> b)</h2>
+    <h2 onclick="showTask('b')"> b) gespeicherte Energiemenge</h2>
     <div class="tip" onclick="toggleTip('b1')">
         <strong>Hilfe b1</strong> – Formel für die Lageenergie
         <div class="tip-content" id="b1">Formel für die Lageenergie:  \[E_{\text{pot}} = m · g · h\]</div>
@@ -81,7 +82,7 @@
 
 <!-- Teilaufgabe c -->
 <div class="task" id="task-c">
-    <h2 onclick="showTask('c')"> c)</h2>
+    <h2 onclick="showTask('c')"> c) nutzbare Energiemenge</h2>
     <div class="tip" onclick="toggleTip('c1')">
         <strong>Hilfe c1</strong> – Kontrollergebnis von b)
         <div class="tip-content" id="c1"> \[E_\text{pot} = 2,94\cdot 10^{12}\,\text{J}\]</div>
@@ -99,20 +100,70 @@
 
 <!-- Teilaufgabe d -->
 <div class="task" id="task-d">
-    <h2 onclick="showTask('d')"> d)</h2>
+    <h2 onclick="showTask('d')"> d) Entladedauer</h2>
     <div class="tip" onclick="toggleTip('d1')">
         <strong>Hilfe d1</strong> – Kontrollergebnis von c)
         <div class="tip-content" id="d1"> \[E_\text{el} = 2,62\cdot 10^{12}\,\text{J}\]</div>
     </div>
     <div class="tip" onclick="toggleTip('d2')">
-        <strong>Hilfe d2</strong> – Formel für die Leistung
-        <div class="tip-content" id="d2"> \[P = \frac{\Delta E}{\Delta t\]</div>
+        <strong>Hilfe d2</strong> – maximale Leistung des Pumpspeicherkraftwerks (M3)
+        <div class="tip-content" id="d2"> \[P = 200\,\text{MW} = 200\cdot 10^6 \,\text{W}\]</div>
     </div>
     <div class="tip" onclick="toggleTip('d3')">
+        <strong>Hilfe d3</strong> – Formel für die Leistung
+        <div class="tip-content" id="d3"> \[P = \frac{\Delta E}{\Delta t}\]</div>
+    </div>
+    <div class="tip" onclick="toggleTip('d4')">
         <strong>Hilfe d3</strong> – Kontrollergebnis
-        <div class="tip-content" id="d3"> \[t = 3,64\,\text{h}\]</div>
+        <div class="tip-content" id="d4"> \[t = 3,64\,\text{h}\]</div>
     </div>
 </div>
+
+<!-- Teilaufgabe e -->
+<div class="task" id="task-e">
+    <h2 onclick="showTask('e')"> e) Anzahl Haushalte</h2>
+    <div class="tip" onclick="toggleTip('e1')">
+        <strong>Hilfe e1</strong> – Kontrollergebnis
+        <div class="tip-content" id="e1">  <p style="text-align: center;">518.135 Haushalte</p></div>
+    </div>
+</div>
+
+<!-- Teilaufgabe f -->
+<div class="task" id="task-f">
+    <h2 onclick="showTask('f')"> f) vorteilhafte Größen</h2>
+    <div class="tip" onclick="toggleTip('f1')">
+        <strong>Hilfe f1</strong> In welcher Energieform wird die elektrische Energie gespeichert?
+        <div class="tip-content" id="f1"> Die Energie wird in Form von Lageenergie gespeichert. Von welchen Größen hängt die Lageenergie ab? </div>
+    </div>
+    <div class="tip" onclick="toggleTip('f2')">
+        <strong>Hilfe f2</strong> – weiterführende Frage
+        <div class="tip-content" id="f2"> Warum ist eine große Höhe vorteilhafter als eine große Wassermenge?</div>
+</div>
+
+<!-- Teilaufgabe g -->
+<div class="task" id="task-g">
+    <h2 onclick="showTask('g')"> g) Skizze Zylinder-Speicherkraftwerk</h2>
+    <div class="tip" onclick="toggleTip('g1')">
+        <strong>Hilfe g1</strong> wesentliche Komponenten
+        <div class="tip-content" id="g1"> Seilwinde mit Generator/Motor, Seil, Zylinder, Schacht </div>
+    </div>
+</div>
+
+<!-- Teilaufgabe h -->
+<div class="task" id="task-h">
+    <h2 onclick="showTask('h')"> h) Geschwindigkeit der Zylinder</h2>
+    <div class="tip" onclick="toggleTip('h1')">
+        <strong>Hilfe h1</strong> Formel
+        <div class="tip-content" id="h1"> \[P=\frac{\Delta E_\text{el}}{\Delta t} = \frac{\eta \cdot \Delta E_\text{pot}}{\Delta t} = 
+            \frac{\eta \cdot m\cdot g \cdot \Delta h}{\Delta t} \stackrel{v=\frac{\Delta h}{\Delta t}}{=} \eta \cdot m\cdot g \cdot v \]
+        Nun nur noch die Formel nach \(v\) umstellen.</div>
+    </div>
+    <div class="tip" onclick="toggleTip('h2')">
+        <strong>Hilfe h2</strong> Kontrollergebnis
+        <div class="tip-content" id="h2"> \[v=0,179\,\text{m/s}\]</div>
+    </div>
+</div>
+
 <script>
     // Funktion zum Anzeigen oder Ausblenden der Tipps einer bestimmten Teilaufgabe
     function showTask(taskId) {
