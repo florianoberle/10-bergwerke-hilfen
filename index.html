@@ -55,8 +55,8 @@
      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
-<h1>Tipps zu den einzelnen Teilaufgabe</h1>
+<h1>Bergwerk als Energiespeicher</h1>
+<strong>Tipps zu den einzelnen Teilaufgabe</strong>
 
 <!-- Teilaufgabe a -->
 <div class="task" id="task-a">
@@ -72,7 +72,7 @@
     <h2 onclick="showTask('b')"> b) gespeicherte Energiemenge</h2>
     <div class="tip" onclick="toggleTip('b1')">
         <strong>Hilfe b1</strong> – Formel für die Lageenergie
-        <div class="tip-content" id="b1">Formel für die Lageenergie:  \[E_{\text{pot}} = m · g · h\]</div>
+        <div class="tip-content" id="b1">Formel für die Lageenergie:  \[E_\text{Lage} = m · g · h\]</div>
     </div>
     <div class="tip" onclick="toggleTip('b2')">
         <strong>Hilfe b2</strong> – Bestimmung der Masse: Umrechnung von Kubikmetern
@@ -85,7 +85,7 @@
     <h2 onclick="showTask('c')"> c) nutzbare Energiemenge</h2>
     <div class="tip" onclick="toggleTip('c1')">
         <strong>Hilfe c1</strong> – Kontrollergebnis von b)
-        <div class="tip-content" id="c1"> \[E_\text{pot} = 2,94\cdot 10^{12}\,\text{J}\]</div>
+        <div class="tip-content" id="c1"> \[E_\text{Lage} = 2,94\cdot 10^{12}\,\text{J}\]</div>
     </div>
     <div class="tip" onclick="toggleTip('c2')">
         <strong>Hilfe c2 </strong>  – Was ist der Wirkungsgrad?
@@ -94,7 +94,7 @@
     </div>
     <div class="tip" onclick="toggleTip('c3')">
         <strong>Hilfe c3 </strong> – Formel zur Berechnung der elektrischen Energie
-        <div class="tip-content" id="c3"> \[E_\text{el}=\eta \cdot E_\text{pot}\]</div>
+        <div class="tip-content" id="c3"> \[E_\text{el}=\eta \cdot E_\text{Lage}\]</div>
     </div>
 </div>
 
@@ -132,7 +132,7 @@
 <div class="task" id="task-f">
     <h2 onclick="showTask('f')"> f) vorteilhafte Größen</h2>
     <div class="tip" onclick="toggleTip('f1')">
-        <strong>Hilfe f1</strong> In welcher Energieform wird die elektrische Energie gespeichert?
+        <strong>Hilfe f1</strong> – In welcher Energieform wird die elektrische Energie gespeichert?
         <div class="tip-content" id="f1"> Die Energie wird in Form von Lageenergie gespeichert. Von welchen Größen hängt die Lageenergie ab? </div>
     </div>
     <div class="tip" onclick="toggleTip('f2')">
@@ -145,7 +145,7 @@
 <div class="task" id="task-g">
     <h2 onclick="showTask('g')"> g) Skizze Zylinder-Speicherkraftwerk</h2>
     <div class="tip" onclick="toggleTip('g1')">
-        <strong>Hilfe g1</strong> wesentliche Komponenten
+        <strong>Hilfe g1</strong> – wesentliche Komponenten
         <div class="tip-content" id="g1"> Seilwinde mit Generator/Motor, Seil, Zylinder, Schacht </div>
     </div>
 </div>
@@ -154,14 +154,65 @@
 <div class="task" id="task-h">
     <h2 onclick="showTask('h')"> h) Geschwindigkeit der Zylinder</h2>
     <div class="tip" onclick="toggleTip('h1')">
-        <strong>Hilfe h1</strong> Formel
-        <div class="tip-content" id="h1"> \[P=\frac{\Delta E_\text{el}}{\Delta t} = \frac{\eta \cdot \Delta E_\text{pot}}{\Delta t} = 
+        <strong>Hilfe h1</strong> – Formel
+        <div class="tip-content" id="h1"> \[P=\frac{\Delta E_\text{el}}{\Delta t} = \frac{\eta \cdot \Delta E_\text{Lage}}{\Delta t} = 
             \frac{\eta \cdot m\cdot g \cdot \Delta h}{\Delta t} \stackrel{v=\frac{\Delta h}{\Delta t}}{=} \eta \cdot m\cdot g \cdot v \]
         Nun nur noch die Formel nach \(v\) umstellen.</div>
     </div>
     <div class="tip" onclick="toggleTip('h2')">
-        <strong>Hilfe h2</strong> Kontrollergebnis
+        <strong>Hilfe h2</strong> – Kontrollergebnis
         <div class="tip-content" id="h2"> \[v=0,179\,\text{m/s}\]</div>
+    </div>
+</div>
+
+<!-- Teilaufgabe i -->
+<div class="task" id="task-i">
+    <h2 onclick="showTask('i')"> i) Energiemenge</h2>
+    <div class="tip" onclick="toggleTip('i1')">
+        <strong>Hilfe i1</strong> – Formel
+        <div class="tip-content" id="i1"> \[E_\text{el}=\eta \cdot E_\text{Lage}\]</div>
+    </div>
+    <div class="tip" onclick="toggleTip('j2')">
+        <strong>Hilfe j2</strong> – Kontrollergebnis
+        <div class="tip-content" id="j2"> \[E_\text{Lage}=5,59\cdot 10^{10}\,\text{J}\]</div>
+    </div>
+</div>
+
+<!-- Teilaufgabe j -->
+<div class="task" id="task-j">
+    <h2 onclick="showTask('j')"> i) Entladedauer</h2>
+    <div class="tip" onclick="toggleTip('j1')">
+        <strong>Hilfe j1</strong> – Vorgehen
+        <div class="tip-content" id="j1"> Gehe wie in Teilaufgabe d) vor.</div>
+    </div>
+    <div class="tip" onclick="toggleTip('j2')">
+        <strong>Hilfe j2</strong> – Kontrollergebnis
+        <div class="tip-content" id="j2"> \[t=46,6\,\text{min}\]</div>
+    </div>
+</div>
+
+<!-- Teilaufgabe k -->
+<div class="task" id="task-k">
+    <h2 onclick="showTask('k')"> k) Nutzwertanalyse</h2>
+    <div class="tip" onclick="toggleTip('k1')">
+        <strong>Hilfe k1</strong> – mögliche Bewertungskriterien
+        <div class="tip-content" id="k1"> <ul>
+            <li>Sicherheit (Unfallgefahr und langfristige Folgen) </li>
+            <li>Kosten für el. Energie </li>
+            <li>CO2-Ausstoß (inkl. Bau, Betireb und Entsorgung der Anlage) </li>
+            <li>Netzstabilität </li>
+            <li>Umweltbelastung im Normalbetrieb (ohne CO2) </li>
+        </div>
+    </div>
+    <div class="tip" onclick="toggleTip('k2')">
+        <strong>Hilfe k2</strong> – Werte der Kriterien
+        <div class="tip-content" id="k2"><ul>
+            <li>Sicherheit → Gesundheit, Umweltschutz, Sicherheit </li>
+            <li>Kosten für el. Energie → Wohlstand</li>
+            <li>CO2-Ausstoß → Klimaschutz </li>
+            <li>Netzstabilität → Wohlstand, Sicherheit, Gesundheit </li>
+            <li>Umweltbelastung im Normalbetrieb → Umweltschutz </li>
+        </ul> </div>
     </div>
 </div>
 
